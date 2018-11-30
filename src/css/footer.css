@@ -1,0 +1,302 @@
+/*FOOTER*/
+.section-catalogList footer {
+    background-color: black;
+    padding: 55px 0 0;
+    color: white;
+    position: relative;
+}
+
+.section-catalogList .m-left {
+    margin-left: 15px;
+}
+
+.section-catalogList .m-top {
+    margin-top: 15px;
+}
+
+.section-catalogList footer h3 {
+    font: 18px Geometria-Light;
+    border-bottom: 1px solid #3c3c3c;
+    padding-bottom: 35px;
+}
+
+.section-catalogList footer span {
+    font: 12px Geometria-Light;
+}
+
+.section-catalogList footer .content {
+    margin-top: 30px;
+}
+
+.section-catalogList footer .contact .content, .section-catalogList footer .menu .content {
+    padding-right: 20px;
+}
+
+.section-catalogList footer .contact, .section-catalogList footer .menu, .section-catalogList footer .instagram {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.section-catalogList footer .contact .phone {
+    margin: 25px 0;
+}
+
+.section-catalogList footer .menu .content .row {
+    padding: 0 0 0 15px;
+}
+
+.section-catalogList footer .menu .content div.item {
+    margin-top: 25px;
+}
+
+.section-catalogList footer .contact .mail {
+    margin-left: 50px;
+}
+
+.section-catalogList footer .instagram .first, .section-catalogList footer .instagram .fourth {
+    background: url("../images/Studio9901.png");
+}
+
+.section-catalogList footer .instagram .second {
+    background: url("../images/575998377a961.png");
+}
+
+.section-catalogList footer .instagram .third {
+    background: url("../images/how-to-set-up-beauty-salon-at-home1.png");
+    background-position: right !important;
+}
+
+.section-catalogList footer .instagram .fifth {
+    background: url("../images/meykup.png");
+}
+
+.section-catalogList footer .instagram .sixth, .section-catalogList footer .instagram .eighth {
+    background: url("../images/pedicur.png");
+}
+
+.section-catalogList footer .instagram .seventh {
+    background: url("../images/haircut.png");
+}
+
+.section-catalogList footer .instagram .image {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.section-catalogList footer .instagram .image:before {
+    background: rgba(1, 1, 1, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+}
+
+.section-catalogList footer .instagram .content .row {
+    justify-content: center;
+}
+
+.section-catalogList footer .container > .row {
+    padding: 0 15px 30px;
+    justify-content: space-between;
+}
+
+.section-catalogList footer .container > .row + .row {
+    justify-content: space-between;
+    border: none;
+    padding: 30px 0;
+    color: #c7c7c7;
+    margin: 0;
+    border-top: 1px solid #3c3c3c;
+}
+
+.section-catalogList .border-bott {
+    border-bottom: 1px solid #c7c7c7;
+}
+
+/*HIDDEN FOOTER*/
+.section-catalogList footer.hiddenFooter {
+    padding: 50px 0 25px;
+    background-color: black;
+    display: none;
+}
+
+.section-catalogList footer.hiddenFooter .block1, .section-catalogList footer.hiddenFooter .block2, .section-catalogList footer.hiddenFooter .block3 {
+    border-bottom: 1px solid #3c3c3c;
+    padding: 25px 0;
+}
+
+.section-catalogList footer.hiddenFooter h2 {
+    font:22px Geometria-Light;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.section-catalogList footer.hiddenFooter h3 {
+    font:14px Geometria-Light;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    border: none;
+    padding-bottom: 0;
+}
+
+.section-catalogList footer.hiddenFooter span {
+    font-size: 14px;
+}
+
+.section-catalogList footer.hiddenFooter p {
+    font: 14px Geometria-Light;
+    color: #c7c7c7;
+    padding: 20px 0 0;
+    line-height: 1.3;
+}
+
+.section-catalogList footer.hiddenFooter .contact {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.section-catalogList footer.hiddenFooter .contact h2 {
+    margin: 35px 0;
+    padding: 0;
+}
+
+.section-catalogList footer.hiddenFooter .contact > div {
+    font:14px Geometria-Light;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.section-catalogList footer.hiddenFooter .contact div.workTime {
+    margin-bottom: 0;
+}
+
+.section-catalogList footer.hiddenFooter .contact span {
+    display: block;
+    opacity: 0.6;
+}
+
+.section-catalogList footer.hiddenFooter .contact span + span {
+    color: white;
+    opacity: 1;
+}
+
+.section-catalogList footer.hiddenFooter .instagram {
+    padding: 0 0 40px;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.section-catalogList footer.hiddenFooter .instagram h2 {
+    padding-bottom: 30px;
+}
+
+.section-catalogList footer.hiddenFooter .instagram .wrapper {
+    justify-content: space-between;
+}
+
+.section-catalogList footer.hiddenFooter .instagram .first, .section-catalogList footer.hiddenFooter .instagram .fourth {
+    background: url("../images/Studio9901.png");
+}
+
+.section-catalogList footer.hiddenFooter .instagram .second {
+    background: url("../images/575998377a961.png");
+}
+
+.section-catalogList footer.hiddenFooter .instagram .third {
+    background: url("../images/how-to-set-up-beauty-salon-at-home1.png");
+}
+
+.section-catalogList footer.hiddenFooter .instagram .image {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-catalogList footer.hiddenFooter .confidentiality {
+    color: #c7c7c7;
+    font: 16px Geometria-Light;
+    margin-top: 25px;
+}
+
+.section-catalogList footer.hiddenFooter .confidentiality span {
+    font-size: 12px;
+}
+
+.section-catalogList footer.hiddenFooter .confidentiality .wrapper {
+    justify-content: space-between;
+}
+
+.section-catalogList footer.hiddenFooter .confidentiality span:first-child {
+    border-bottom: 1px solid white;
+}
+
+/*STYLE FOR WIDTH < 1024PX */
+@media screen and (max-width: 1023px) {
+
+    .section-catalogList footer .instagram {
+        margin: 40px auto;
+    }
+
+    .section-catalogList footer h3 {
+        text-align: center;
+    }
+
+}
+
+/*STYLE FOR WIDTH < 700 PX */
+@media screen and (max-width: 700px) {
+
+    .section-catalogList footer .contact .mail {
+        margin: 0;
+    }
+
+    .section-catalogList footer .contact, .section-catalogList footer .menu, .section-catalogList footer .instagram {
+        width: 100%;
+        margin: 0 0 50px 0;
+    }
+
+    .section-catalogList footer .menu .content .row {
+        padding-left: 0;
+    }
+
+    .section-catalogList footer .contact .content {
+        text-align: center;
+    }
+
+    .section-catalogList footer .content {
+        padding-right: 0 !important;
+    }
+
+    .section-catalogList footer .contact .mail {
+        margin: 10px 0 0 0;
+        display: block;
+    }
+
+    .section-catalogList footer .menu .content .row, .section-catalogList footer .instagram .content .row {
+        justify-content: center;
+    }
+
+}
+
+/*STYLE FOR WIDTH < 575 PX */
+@media screen and (max-width: 575px) {
+    .section-catalogList footer {
+        display: none;
+    }
+
+    .section-catalogList footer.hiddenFooter {
+        display: block;
+    }
+}
+
+
+
+
+

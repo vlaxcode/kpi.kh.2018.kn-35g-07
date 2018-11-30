@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'Geometria';
+	src: url('../fonts/Geometria/Geometria.eot');
+	src: local('Geometria Light'), local('Geometria-Light'),
+		url('../fonts/Geometria/Geometria.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria/Geometria.woff') format('woff'),
+		url('../fonts/Geometria/Geometria.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria-Light';
+	src: url('../fonts/Geometria-Light/Geometria-Light.eot');
+	src: local('Geometria Light'), local('Geometria-Light'),
+	url('../fonts/Geometria-Light/Geometria-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Geometria-Light/Geometria-Light.woff') format('woff'),
+	url('../fonts/Geometria-Light/Geometria-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
