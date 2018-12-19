@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+<section class="section-catalogList">
+    <!--HEADER-->
+    <header>
+        <nav>
+            <ul class="row wrapper">
+                <li><a href="#">Линейка</a></li>
+                <li><a href="#">Бренд</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li class="logo"><a href="#"><img alt="" src="./images/LOGO-PROTO_2.png"></a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#">Корзина</a></li>
+                <li class="searchItem"><a href="#"><i class="fal fa-search"></i></a></li>
+            </ul>
+            <div class="hiddenHeader">
+                <div class="container">
+                    <div class="row wrap">
+                        <div class="menuIcon">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line thirdLine"></span>
+                        </div>
+                        <!--HIDDEN MENU-->
+                        <div class="hiddenMenu">
+                            <div class="leftSide">
+                                <span class="close"><i class="la la-close"></i></span>
+                            </div>
+                            <div class="rightSide">
+                                <ul>
+                                    <li><a href="#">Цены</a></li>
+                                    <li><a href="#">Акции</a></li>
+                                    <li><a href="#">Кейсы</a></li>
+                                    <li><a href="#">Блог</a></li>
+                                    <li><a href="#">О нашем обучении</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                                <div class="soc">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-youtube-play"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END HIDDEN MENU-->
+                        <div class="logoBlack">
+                            <a href="#"><img alt="" src="./images/logoBlack.png"></a>
+                        </div>
+                        <div class="right">
+                            <a class="search" href="#"><i class="fal fa-search"></i></a>
+                            <div class="field">
+                                <form>
+                                <label><input type="text"></label>
+                                </form>
+                            </div>
+                            <a class="basket" href="#">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                <div class="value"><span>2</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--CATALOG-->
+    <div class="catalog">
+        <h2>Каталог</h2>
+    </div>
+    <!--FILTERS-->
+    <div class="filterBlock">
+        <div class="filters">
+            <div class="container">
+                <div class="row wrapper">
+                    <div class="productLine showPopup">
+                        <a href="#">Линейка товара:</a>
+                        <span class="angle"><i class="fal fa-angle-up"></i></span>
+                        <div class="popup product-line">
+                            <div class="filterTitle">
+                                <span>Линейка товара</span>
+                                <a class="close" href="#"><i class="fal fa-times"></i></a>
+                            </div>
+                            <div>
+                                <div class="row wrapper">
+                                    <div class="filterItem desktopFilter">
+                                        <div>
+                                            <label for="allLines">Все линейки</label>
+                                            <div class="check">
+                                                <input type="checkbox" id="allLines" name="productLineFilter"
+                                                       value="allLines"/>
+                                                <span></span>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <label for="sensitiveSkin">Чувствительная кожа</label>
+                                            <div class="check">
+                                                <input type="checkbox" id="sensitiveSkin" name="productLineFilter"
+                                                       value="sensitiveSkin"/>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="volumeAndDensity">Объем и плотность</label>
+                                            <div class="check">
+                                                <input type="checkbox" id="volumeAndDensity" name="productLineFilter"
+                                                       value="volumeAndDensity"/>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="moisturizingHair">Увлажнение волос</label>
+                                            <div class="check">
+                                                <input type="checkbox" id="moisturizingHair" name="productLineFilter"
+                                                       value="moisturizingHair"/>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="blondeHair">Блондированные волосы</label>
+                                            <div class="check">
+                                                <input type="checkbox" id="blondeHair" name="productLineFilter"
+                                                       value="blondeHair"/>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="aromaSpa">Арома SPA олекция</label>
+                                            <div class="check">
+                                                <input type="checkbox" id="aromaSpa" name="productLineFilter"
+                                                       value="aromaSpa"/>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="porArtCollection">POP ART колекция</label>
+                                            <div class="check">
+                                                <input type="checkbox" id="porArtCollection" name="productLineFilter"
+                                                       value="porArtCollection"/>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="barberProtomen">Barber protomen</label>
+                                            <div class="check">
+                                                <input type="checkbox" id="barberProtomen" name="productLineFilter"
+                                                       value="barberProtomen"/>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="protomanKing">Protoman-царь</label>
+                                            <div class="check">
+                                                <input type="checkbox" id="protomanKing" name="productLineFilter"
+                                                       value="protomanKing"/>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="btn">
+                                            <input type="submit" value="Применить">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sort show-sortPopup">
+                        <a href="#">Сортировка</a>
+                        <span class="angle"><i class="fal fa-angle-down"></i></span>
+                        <div class="popup sort-line">
+                            <div class="filterTitle">
+                                <span>Сортировка</span>
+                                <a class="close" href="#"><i class="fal fa-times"></i></a>
+                            </div>
+                            <div>
+                                <div class="row wrapper">
+                                    <div class="filterItem desktopFilter">
+                                        <div>
+                                            <label class="active" for="new">Новинки</label>
+                                            <div class="check">
+                                                <input type="checkbox" id="new" name="productLineFilter"
+                                                       value="allLines"/>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="fromExpensive">От дорогих к дешевым</label>
+                                            <div class="check">
+                                                <input type="checkbox" id="fromExpensive" name="productLineFilter"
+                                                       value="sensitiveSkin"/>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="fromCheap">От дешевых к дорогим</label>
+                                            <div class="check">
+                                                <input type="checkbox" id="fromCheap" name="productLineFilter"
+                                                       value="volumeAndDensity"/>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="selectedFilters">
+        <div class="container">
+            <div class="row wrapper">
+                <span>Фильтры:</span>
+                <div class="heading"></div>
+            </div>
+            <a class="clear" href="#">Очистить</a>
+        </div>
+    </div>
+    <!--CATALOG-->
+    <div class="catalogHidden">
+        <h2>Каталог</h2>
+    </div>
+    <!--ITEM-->
+    <div class="main">
+        <div class="newsList">
+            <div class="container">
+                <div class="row">
+                    <div class="newsItem col-lg-4 col-md-6">
+                        <div class="image">
+                            <img alt="" src="./images/item1.png">
+                        </div>
+                        <div class="title">
+                            <div>
+                                <span>ШАМПУНЬ<br> ЭКСПРЕСС-ВОССТАНОВЛЕНИЕ</span>
+                                <span>Восстанавливающая линия</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span>420 руб</span>
+                        </div>
+                        <div class="footerContent">
+                            <div class="size">
+                                <a class="active ML100" href="#">100 ml</a>
+                                <a class="ML300" href="#">300 ml</a>
+                                <a class="ML1000" href="#">1000 ml</a>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                    <div class="newsItem col-lg-4  col-md-6 m-left notAvailable ">
+                        <div class="image">
+                            <img alt="" src="./images/item2.png">
+                        </div>
+                        <div class="title marg">
+                            <div>
+                                <span>Крем-масло</span>
+                                <span>Восстанавливающая линия</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span>985 руб</span>
+                        </div>
+                        <div class="footerContent">
+                            <div class="size">
+                                <a class="active ML100" href="#">100 ml</a>
+                                <a class="ML300" href="#">300 ml</a>
+                                <a class="ML1000" href="#">1000 ml</a>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                    <div class="newsItem col-lg-4  col-md-6 m-left not1000ml ">
+                        <div class="popular"><span>Популярное</span></div>
+                        <div class="image">
+                            <img alt="" src="./images/item3.png">
+                        </div>
+                        <div class="title marg">
+                            <div>
+                                <span>Маска глубокое</span>
+                                <span>Восстанавливающая линия</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span>1160 руб</span>
+                        </div>
+                        <div class="footerContent">
+                            <div class="size">
+                                <a class="active ML100" href="#">100 ml</a>
+                                <a class="ML300" href="#">300 ml</a>
+                                <a class="ML1000" href="#">1000 ml</a>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                    <div class="newsItem col-lg-4  col-md-6 m-top discount">
+                        <div class="image">
+                            <img alt="" src="./images/item1.png">
+                        </div>
+                        <div class="title">
+                            <div>
+                                <span>ШАМПУНЬ<br> ЭКСПРЕСС-ВОССТАНОВЛЕНИЕ</span>
+                                <span>Восстанавливающая линия</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="oldPrice">1138</span>
+                            <span class="newPrice">420 руб</span>
+                        </div>
+                        <div class="footerContent">
+                            <div class="size">
+                                <a class="active ML100" href="#">100 ml</a>
+                                <a class="ML300" href="#">300 ml</a>
+                                <a class="ML1000" href="#">1000 ml</a>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                    <div class="newsItem col-lg-4  col-md-6 m-left m-top ">
+                        <div class="image">
+                            <img alt="" src="./images/item2.png">
+                        </div>
+                        <div class="title marg">
+                            <div>
+                                <span>Крем-масло</span>
+                                <span>Восстанавливающая линия</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span>985 руб</span>
+                        </div>
+                        <div class="footerContent">
+                            <div class="size">
+                                <a class="active ML100" href="#">100 ml</a>
+                                <a class="ML300" href="#">300 ml</a>
+                                <a class="ML1000" href="#">1000 ml</a>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                    <div class="newsItem col-lg-4  col-md-6 m-left m-top ">
+                        <div class="popular"><span>Популярное</span></div>
+                        <div class="image">
+                            <img alt="" src="./images/item3.png">
+                        </div>
+                        <div class="title marg">
+                            <div>
+                                <span>Маска глубокое</span>
+                                <span>Восстанавливающая линия</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span>1160 руб</span>
+                        </div>
+                        <div class="footerContent">
+                            <div class="size">
+                                <a class="active ML100" href="#">100 ml</a>
+                                <a class="ML300" href="#">300 ml</a>
+                                <a class="ML1000" href="#">1000 ml</a>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                    <div class="newsItem col-lg-4  col-md-6 m-top ">
+                        <div class="image">
+                            <img alt="" src="./images/item1.png">
+                        </div>
+                        <div class="title">
+                            <div>
+                                <span>ШАМПУНЬ<br> ЭКСПРЕСС-ВОССТАНОВЛЕНИЕ</span>
+                                <span>Восстанавливающая линия</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span>420 руб</span>
+                        </div>
+                        <div class="footerContent">
+                            <div class="size">
+                                <a class="active ML100" href="#">100 ml</a>
+                                <a class="ML300" href="#">300 ml</a>
+                                <a class="ML1000" href="#">1000 ml</a>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                    <div class="newsItem col-lg-4  col-md-6 m-left m-top ">
+                        <div class="image">
+                            <img alt="" src="./images/item2.png">
+                        </div>
+                        <div class="title marg">
+                            <div>
+                                <span>Крем-масло</span>
+                                <span>Восстанавливающая линия</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span>985 руб</span>
+                        </div>
+                        <div class="footerContent">
+                            <div class="size">
+                                <a class="active ML100" href="#">100 ml</a>
+                                <a class="ML300" href="#">300 ml</a>
+                                <a class="ML1000" href="#">1000 ml</a>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                    <div class="newsItem col-lg-4  col-md-6 m-left m-top ">
+                        <div class="popular"><span>Популярное</span></div>
+                        <div class="image">
+                            <img alt="" src="./images/item3.png">
+                        </div>
+                        <div class="title marg">
+                            <div>
+                                <span>Маска глубокое</span>
+                                <span>Восстанавливающая линия</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span>1160 руб</span>
+                        </div>
+                        <div class="footerContent">
+                            <div class="size">
+                                <a class="active ML100" href="#">100 ml</a>
+                                <a class="ML300" href="#">300 ml</a>
+                                <a class="ML1000" href="#">1000 ml</a>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Добавить в корзину</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--PAGINATION-->
+        <div class="pagination">
+            <div class="container">
+                <div class="center">
+                    <div class="content"><span>1</span></div>
+                    <div class="content"><span>2</span></div>
+                    <div class="content"><span>3</span></div>
+                    <div class="content"><span>...</span></div>
+                    <div class="content"><span>45</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--NEWS ANONS-->
+    <div class="anons">
+        <div class="container">
+            <div class="contentNews">
+                <h2>Анонсы новостей</h2>
+                <div class="row">
+                    <div class="itemNews col-lg-4 col-md-12 one">
+                        <div>
+                            <div class="title">
+                                <span>Новость 1</span>
+                            </div>
+                            <div class="newsText">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                                    consectetur
+                                </p>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemNews col-lg-4 col-md-12 two">
+                        <div>
+                            <div class="title">
+                                <span>Новость 2</span>
+                            </div>
+                            <div class="newsText">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                                    consectetur
+                                </p>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemNews col-lg-4 col-md-12 three">
+                        <div>
+                            <div class="title">
+                                <span>Новость 3</span>
+                            </div>
+                            <div class="newsText">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                                    consectetur
+                                </p>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="contact">
+                    <h3>Контакты</h3>
+                    <div class="content">
+                        <div class="address">
+                            <span>Адрес: 107113, Moсква, ул. Маленковская 32 стр. 2А</span>
+                        </div>
+                        <div class="phone">
+                            <span>+7 (495) 748-63-60</span>
+                            <span class="mail">info@protokeratin.ru</span>
+                        </div>
+                        <div class="timeWork">
+                            <span>Режим работы: ПН-ПТ, с 9:30 до 18:30</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <h3>Меню</h3>
+                    <div class="content">
+                        <div class="row">
+                            <div>
+                                <div><span>Доставка и оплата</span></div>
+                                <div class="item"><span>Гарантии и возврат</span></div>
+                                <div class="item"><span>Предложение о сотрудничестве</span></div>
+                            </div>
+                            <div>
+                                <div class="politics"><span>Политики</span></div>
+                                <div class="item"><span>Контакты</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="instagram">
+                    <h3>Мы в Instagram</h3>
+                    <div class="content">
+                        <div class="row">
+                            <div class="image first"></div>
+                            <div class="image second m-left"></div>
+                            <div class="image third m-left"></div>
+                            <div class="image fourth m-left"></div>
+                        </div>
+                        <div class="row">
+                            <div class="image fifth  m-top"></div>
+                            <div class="image sixth m-left m-top"></div>
+                            <div class="image seventh m-left m-top"></div>
+                            <div class="image eighth m-left m-top"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row wrapper">
+                <span class="border-bott">Политика конфиденциальности</span>
+                <span>© 2018</span>
+            </div>
+        </div>
+    </footer>
+    <footer class="hiddenFooter">
+        <div class="container">
+            <div class="news">
+                <h2>Анонсы новостей</h2>
+                <div class="block1">
+                    <h3>Новость 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                        Lorem ipsum dolor sit amet
+                    </p>
+                </div>
+                <div class="block2">
+                    <h3>Новость 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                        Lorem ipsum dolor sit amet
+                    </p>
+                </div>
+                <div class="block3">
+                    <h3>Новость 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                        Lorem ipsum dolor sit amet
+                    </p>
+                </div>
+            </div>
+            <div class="contact">
+                <h2>Контакты</h2>
+                <div class="phone">
+                    <span>Телефон:</span>
+                    <span class="number">+7 (495) 748-63-60</span>
+                </div>
+                <div class="soc">
+                    <span>E-mail:</span>
+                    <span class="email">info@protokeratin.ru</span>
+                </div>
+                <div class="address">
+                    <span>Адрес:</span>
+                    <span>107113, Moсква, ул. Маленковская 32 стр. 2А</span>
+                </div>
+                <div class="workTime">
+                    <span>Режим работы:</span>
+                    <span class="time">с Понедельника по Пятницу, с 9:30 до 18:30</span>
+                </div>
+            </div>
+            <div class="instagram">
+                <h2>Мы в инстаграм</h2>
+                <div class="row wrapper">
+                    <div class="image first"></div>
+                    <div class="image second"></div>
+                    <div class="image third"></div>
+                    <div class="image fourth"></div>
+                </div>
+            </div>
+    
+            <div class="confidentiality">
+                <div class="row wrapper">
+                    <span>Политика конфиденциальности </span>
+                    <span>© 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+</body>
+</html>

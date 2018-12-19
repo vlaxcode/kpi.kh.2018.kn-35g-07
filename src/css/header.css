@@ -1,0 +1,306 @@
+/*HEADER*/
+.section-catalogList header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.section-catalogList header .wrapper {
+    border-bottom: 1px solid #454545;
+    padding: 0;
+    margin: 0;
+}
+
+.section-catalogList header .menuIcon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+}
+
+.section-catalogList header .hiddenHeader {
+    padding: 10px 0;
+    display: none;
+}
+
+.section-catalogList header .hiddenHeader .wrap {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-catalogList header .right .search {
+    margin-right: 15px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.section-catalogList header .right .gray {
+    color: #666666;
+}
+
+.section-catalogList header .field {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 30px;
+
+}
+
+.section-catalogList header .field input {
+    top: -10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    right: 0;
+    height: 40px;
+    width: 0;
+    transition: 1s;
+    position: absolute;
+    opacity: 0;
+    outline: none;
+    padding: 5px 20px 5px 0;
+}
+
+.section-catalogList header .field input.active {
+    opacity: 1;
+    width: 480px;
+}
+
+.section-catalogList header .right .basket {
+    position: relative;
+    color: white;
+}
+
+.section-catalogList header .right .basket .value {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    left: 8px;
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    border-radius: 50%;
+    font-size: 10px;
+    color: white;
+}
+
+.section-catalogList header .menuIcon .line {
+    width: 25px;
+    height: 2px;
+    margin: 2px 0;
+    background-color: white;
+}
+
+.section-catalogList header .menuIcon .thirdLine {
+    width: 15px;
+}
+
+.section-catalogList header ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-catalogList header ul li {
+    flex: auto;
+    text-align: center;
+}
+
+.section-catalogList header ul li:not(:last-child) {
+    border-right: 1px solid #454545;
+}
+
+.section-catalogList header ul li a {
+    padding: 25px 0;
+    display: block;
+    text-transform: uppercase;
+    font: 12px Geometria;
+    color: white;
+}
+
+.section-catalogList header ul li.searchItem a {
+    font-size: 18px;
+    padding: 22px 0;
+}
+
+.section-catalogList header ul li.logo a {
+    padding: 10px 25px;
+}
+
+.section-catalogList header .logoBlack {
+    display: none;
+}
+
+.section-catalogList header img {
+    width: 145px;
+}
+
+/*STYLE FOR WIDTH > 1024PX */
+@media screen and (min-width: 1024px ) {
+    .section-catalogList header {
+        opacity: 0;
+    }
+}
+
+/*STYLE FOR WIDTH < 1024PX */
+@media screen and (max-width: 1023px) {
+    .section-catalogList header {
+        background-color: white;
+        z-index: 6;
+    }
+
+    .section-catalogList header nav ul.row {
+        display: none;
+    }
+
+    .section-catalogList header .hiddenHeader {
+        display: block;
+    }
+
+    .section-catalogList header .Logo {
+        display: none;
+    }
+
+    .section-catalogList header .logoBlack {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .section-catalogList header .search, .section-catalogList header .basket {
+        color: #666666 !important;
+    }
+
+    .section-catalogList header .menuIcon .line {
+        background-color: #666666;
+    }
+
+    .section-catalogList header .Logo {
+        display: inline-block;
+    }
+
+    .section-catalogList header .right {
+        display: inline-block;
+        position: relative;
+    }
+
+    .section-catalogList header nav ul {
+        display: none;
+    }
+
+    .section-catalogList nav .menuIcon {
+        display: inline-flex;
+    }
+
+    /*HIDDEN MENU*/
+    .section-catalogList header .hiddenMenu {
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        width: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .section-catalogList header .hiddenMenu .rightSide {
+        background-color: #1e132c;
+        width: 75%;
+        padding-bottom: 105px;
+    }
+
+    .section-catalogList header .hiddenMenu .leftSide {
+        background-color: rgba(43, 43, 43, 0.8);
+        width: 25%;
+    }
+
+    .section-catalogList header .hiddenMenu ul {
+        display: block;
+        padding: 10px 20px 0;
+    }
+
+    .section-catalogList header .hiddenMenu li {
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #342a41;
+    }
+
+    .section-catalogList header .hiddenMenu .rightSide > ul li {
+        border-right: none !important;
+    }
+
+    .section-catalogList header .hiddenMenu a {
+        color: white;
+        padding: 20px 0;
+        font: 14px montserratregular;
+        letter-spacing: 1px;
+    }
+
+    .section-catalogList header .hiddenMenu .soc {
+        margin-top: 10px;
+    }
+
+    .section-catalogList header .hiddenMenu .soc li {
+        width: 45px;
+        height: 45px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #342a41;
+    }
+
+    .section-catalogList header .hiddenMenu .soc li a {
+        padding: 0;
+        display: inline;
+    }
+
+    .section-catalogList header .hiddenMenu .soc li a i {
+        font-size: 18px;
+    }
+
+    .section-catalogList header .hiddenMenu .soc li:not(:first-child) {
+        margin-left: 20px;
+    }
+
+    .section-catalogList header .hiddenMenu span.close {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .section-catalogList header .hiddenMenu span.close i {
+        color: white;
+        font-size: 26px;
+    }
+
+    /*END HIDDEN MENU*/
+
+}
+
+/*STYLE FOR WIDTH < 700 PX */
+@media screen and (max-width: 700px) {
+    .section-catalogList header .field input.active {
+        opacity: 1;
+        width: 385px;
+    }
+}
+
+/*STYLE FOR WIDTH < 575 PX */
+@media screen and (max-width: 575px) {
+    .section-catalogList header {
+        position: relative;
+    }
+
+    .section-catalogList header .logoBlack img {
+        width: 105px;
+    }
+
+    .section-catalogList header .field input.active {
+        opacity: 1;
+        width: 210px;
+    }
+}
+
+
+

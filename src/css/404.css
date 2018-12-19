@@ -1,0 +1,36 @@
+.error {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-style: italic;
+    text-align: center;
+}
+
+.error__code {
+    font-size: 44px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.error__code span {
+    font-weight: bold;
+}
+
+.error__body {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+.btn__main {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightblue;
+    color: black;
+    border: 1px solid lightblue;
+}
+.btn__main:hover{
+    background-color: transparent;
+}
